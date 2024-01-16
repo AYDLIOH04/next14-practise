@@ -19,8 +19,7 @@ const config: Config = {
       },
       colors: {
         background: "#222",
-        header: '#333',
-        footer: '#333',
+        main: '#333',
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
