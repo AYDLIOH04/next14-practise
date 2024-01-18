@@ -1,6 +1,6 @@
 "use client";
 
-import { Code } from "@/components/ui/code";
+import { JsonCode } from "@/components/ui/json-code";
 import { SubmitButton } from "@/components/ui/submit-button";
 import clsx from "clsx";
 import { useState } from "react";
@@ -79,7 +79,7 @@ export const RHForm = () => {
         </div>
         <SubmitButton />
       </form>
-      <Code data={data} />
+      <JsonCode data={data} />
     </div>
   );
 };

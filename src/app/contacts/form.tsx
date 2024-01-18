@@ -3,7 +3,7 @@
 import { useFormState } from "react-dom";
 import { addEntry } from "../_actions/form-action";
 import { SubmitButton } from "@/components/ui/submit-button";
-import { Code } from "../../components/ui/code";
+import { JsonCode } from "../../components/ui/json-code";
 
 export const Form = () => {
   const [state, formAction] = useFormState(addEntry, null);
@@ -27,7 +27,7 @@ export const Form = () => {
         />
         <SubmitButton />
       </form>
-      <Code data={state?.data || state?.error} />
+      <JsonCode data={state?.data || state?.error} />
     </div>
   );
 };

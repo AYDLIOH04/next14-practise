@@ -23,6 +23,9 @@ const config: Config = {
         primary: '#131424',
         secondary: '#393A47',
         accent: '#F13024',
+      },
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
   },

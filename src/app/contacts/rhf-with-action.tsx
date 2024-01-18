@@ -1,6 +1,6 @@
 "use client";
 
-import { Code } from "@/components/ui/code";
+import { JsonCode } from "@/components/ui/json-code";
 import { SubmitButton } from "@/components/ui/submit-button";
 import { FormDataSchema } from "@/lib/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -77,7 +77,7 @@ export const RHFormWithAction = () => {
         </div>
         <SubmitButton />
       </form>
-      <Code data={data} />
+      <JsonCode data={data} />
     </div>
   );
 };
