@@ -1,5 +1,5 @@
 import { delay } from "@/lib/utils";
-import { SwitchRoleButton } from "./(header-components)/switch-role-btn";
+import { SwitchRoleButton } from "./(components)/switch-role-btn";
 
 const DashboardHeader = async () => {
   await delay(2000);
