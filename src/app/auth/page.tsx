@@ -17,7 +17,7 @@ const AuthPage = () => {
       {formType === "LOGIN" ? (
         <LoginForm switchForm={switchForm} />
       ) : (
-        <RegistrationForm switchForm={switchForm}  />
+        <RegistrationForm switchForm={switchForm} />
       )}
     </section>
   );

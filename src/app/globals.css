@@ -7,13 +7,13 @@ body {
 }
 
 .container {
-  @apply max-w-[1200px] mx-auto;
+  @apply mx-auto max-w-[1200px];
 }
 
 .main-container {
-  @apply max-w-[1800px] mx-auto;
+  @apply mx-auto max-w-[1800px];
 }
 
 .page-title {
-  @apply text-2xl font-bold mb-8 capitalize;
+  @apply mb-8 text-2xl font-bold capitalize;
 }

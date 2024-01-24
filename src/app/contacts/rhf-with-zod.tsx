@@ -30,21 +30,21 @@ export const RHFormWithZod = () => {
   };
 
   return (
-    <div className="flex lg:flex-row flex-col gap-6">
+    <div className="flex flex-col gap-6 lg:flex-row">
       <form
         onSubmit={handleSubmit(processForm)}
-        className="flex flex-1 flex-col gap-4 lg:w-1/2 sm:w-2/3 w-full lg:mx-0 mx-auto"
+        className="mx-auto flex w-full flex-1 flex-col gap-4 sm:w-2/3 lg:mx-0 lg:w-1/2"
       >
         <div
           className={clsx(
             "relative flex flex-col gap-2",
-            "before:border-t-[8px] before:border-b-[8px] before:border-l-[16px] before:border-t-transparent before:border-b-transparent before:border-l-accent before:absolute before:-left-6 before:top-3",
-            { "before:hidden": !errors.name?.message }
+            "before:absolute before:-left-6 before:top-3 before:border-b-[8px] before:border-l-[16px] before:border-t-[8px] before:border-b-transparent before:border-l-accent before:border-t-transparent",
+            { "before:hidden": !errors.name?.message },
           )}
         >
           <input
             placeholder="Your name"
-            className="text-background rounded-md py-2 px-3 placeholder:capitalize w-full"
+            className="w-full rounded-md px-3 py-2 text-background placeholder:capitalize"
             {...register("name")}
           />
           {errors.name?.message && (
@@ -55,12 +55,12 @@ export const RHFormWithZod = () => {
         <div
           className={clsx(
             "relative flex flex-col gap-2",
-            "before:border-t-[8px] before:border-b-[8px] before:border-l-[16px] before:border-t-transparent before:border-b-transparent before:border-l-accent before:absolute before:-left-6 before:top-3",
-            { "before:hidden": !errors.message?.message }
+            "before:absolute before:-left-6 before:top-3 before:border-b-[8px] before:border-l-[16px] before:border-t-[8px] before:border-b-transparent before:border-l-accent before:border-t-transparent",
+            { "before:hidden": !errors.message?.message },
           )}
         >
           <textarea
-            className="text-background rounded-md min-h-[100px] w-full py-2 px-3 placeholder:capitalize"
+            className="min-h-[100px] w-full rounded-md px-3 py-2 text-background placeholder:capitalize"
             placeholder="Your message"
             {...register("message")}
           />

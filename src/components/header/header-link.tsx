@@ -17,9 +17,12 @@ export const HeaderLink = ({ children, href, ...props }: HeaderLinkProps) => {
       href={href}
       {...props}
       className={clsx(
-        "transition uppercase duration-300 before:duration-300 relative before:absolute before:h-[2px] before:-bottom-1 hover:text-accent before:hover:bg-accent",
-        { "before:w-full before:left-0 before:bg-accent text-accent": active },
-        { "before:w-[30px] before:left-[calc(50%-15px)] before:bg-white text-white": !active },
+        "relative uppercase transition duration-300 before:absolute before:-bottom-1 before:h-[2px] before:duration-300 hover:text-accent before:hover:bg-accent",
+        { "text-accent before:left-0 before:w-full before:bg-accent": active },
+        {
+          "text-white before:left-[calc(50%-15px)] before:w-[30px] before:bg-white":
+            !active,
+        },
       )}
     >
       {children}

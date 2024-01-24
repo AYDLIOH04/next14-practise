@@ -4,7 +4,7 @@ const DashboardHeader = async () => {
   await delay(5000);
 
   return (
-    <section className="h-60 rounded-md p-10 border-2 border-secondary">
+    <section className="h-60 rounded-md border-2 border-secondary p-10">
       <div>
         <h1 className="text-3xl font-bold capitalize">
           Admin <span className="text-accent">dashboard.</span>

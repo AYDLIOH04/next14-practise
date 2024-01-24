@@ -9,19 +9,19 @@ export const Form = () => {
   const [state, formAction] = useFormState(addEntry, null);
 
   return (
-    <div className="flex lg:flex-row flex-col gap-6">
+    <div className="flex flex-col gap-6 lg:flex-row">
       <form
         action={formAction}
-        className="flex flex-1 flex-col gap-4 lg:w-1/2 sm:w-2/3 w-full lg:mx-0 mx-auto"
+        className="mx-auto flex w-full flex-1 flex-col gap-4 sm:w-2/3 lg:mx-0 lg:w-1/2"
         key={Math.random()}
       >
         <input
-          className="text-background rounded-md py-2 px-3 placeholder:capitalize"
+          className="rounded-md px-3 py-2 text-background placeholder:capitalize"
           name="name"
           placeholder="Your name"
         />
         <textarea
-          className="text-background rounded-md min-h-[100px] py-2 px-3 placeholder:capitalize"
+          className="min-h-[100px] rounded-md px-3 py-2 text-background placeholder:capitalize"
           name="message"
           placeholder="Your message"
         />

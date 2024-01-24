@@ -7,7 +7,11 @@ type FooterLinkProps = LinkProps & {
 export const FooterLink = ({ children, ...props }: FooterLinkProps) => {
   return (
     <li>
-      <Link {...props} target="_blank" className="hover:text-accent duration-200">
+      <Link
+        {...props}
+        target="_blank"
+        className="duration-200 hover:text-accent"
+      >
         {children}
       </Link>
     </li>

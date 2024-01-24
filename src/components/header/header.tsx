@@ -3,12 +3,12 @@ import { SlPlaylist } from "react-icons/sl";
 
 export const Header = () => {
   return (
-    <header className="w-full h-[70px] bg-main">
-      <div className="md:px-16 px-4 flex items-center justify-between h-full w-full main-container">
-        <div className="border-accent border-2 p-2.5 rounded-full">
-          <SlPlaylist size={25}/>
+    <header className="h-[70px] w-full bg-main">
+      <div className="main-container flex h-full w-full items-center justify-between px-4 md:px-16">
+        <div className="rounded-full border-2 border-accent p-2.5">
+          <SlPlaylist size={25} />
         </div>
-        <nav className="md:flex hidden justify-start items-center gap-10">
+        <nav className="hidden items-center justify-start gap-10 md:flex">
           <HeaderLink href={"/"}>Home</HeaderLink>
           <HeaderLink href={"/about"}>About</HeaderLink>
           <HeaderLink href={"/contacts"}>Contacts</HeaderLink>

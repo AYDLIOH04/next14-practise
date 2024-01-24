@@ -1,7 +1,7 @@
 export const JsonCode = ({ data }: { data: any }) => {
   return (
-    <div className="flex-1 rounded-md border-secondary border-2 p-8 text-white w-full lg:mx-0 mx-auto">
-      <pre className="md:text-[16px] text-[14px] whitespace-pre-wrap w-full min-h-[200px]">
+    <div className="mx-auto w-full flex-1 rounded-md border-2 border-secondary p-8 text-white lg:mx-0">
+      <pre className="min-h-[200px] w-full whitespace-pre-wrap text-[14px] md:text-[16px]">
         {JSON.stringify(data, null, 2)}
       </pre>
     </div>

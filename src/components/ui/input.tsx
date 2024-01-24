@@ -4,7 +4,7 @@ const Input = (props: InputProps) => {
   return (
     <input
       {...props}
-      className="placeholder:capitalize text-white rounded-md px-3 py-2 outline-none bg-background border-secondary focus:border-white border-2"
+      className="rounded-md border-2 border-secondary bg-background px-3 py-2 text-white outline-none placeholder:capitalize focus:border-white"
     />
   );
 };

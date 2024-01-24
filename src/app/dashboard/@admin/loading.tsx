@@ -1,7 +1,7 @@
 export default function Loading() {
   return (
-    <div className='flex justify-center items-center h-60 p-10 animate-pulse rounded-md border-2 border-secondary w-full'>
-      <div className="border-rose-400 border-2 border-dashed rounded-full p-8 animate-spin-slow duration-300"/>
+    <div className="flex h-60 w-full animate-pulse items-center justify-center rounded-md border-2 border-secondary p-10">
+      <div className="animate-spin-slow rounded-full border-2 border-dashed border-rose-400 p-8 duration-300" />
     </div>
-  )
+  );
 }

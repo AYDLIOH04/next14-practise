@@ -5,7 +5,7 @@ export default function Home() {
     <section>
       <div className="container">
         <div className="mb-12">
-          <h1 className="text-3xl text-center">
+          <h1 className="text-center text-3xl">
             Luck<span className="text-accent">ify</span>
           </h1>
         </div>

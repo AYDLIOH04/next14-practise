@@ -12,17 +12,17 @@ const Button = ({ children, variant = "full", ...props }: ButtonProps) => {
       className={clsx(
         "capitalize",
         {
-          "rounded-md bg-accent hover:bg-opacity-70 duration-200 py-2 px-3 text-white disabled:cursor-not-allowed disabled:opacity-50":
+          "rounded-md bg-accent px-3 py-2 text-white duration-200 hover:bg-opacity-70 disabled:cursor-not-allowed disabled:opacity-50":
             variant === "full",
         },
         {
-          "font-bold text-accent text-[20px] before:duration-500 relative before:absolute hover:before:w-full before:w-0 before:rounded-md before:h-[3px] before:bg-accent before:-bottom-0.5 before:right-0":
+          "relative text-[20px] font-bold text-accent before:absolute before:-bottom-0.5 before:right-0 before:h-[3px] before:w-0 before:rounded-md before:bg-accent before:duration-500 hover:before:w-full":
             variant === "link",
         },
         {
-          "font-bold text-accent border-accent border-2 text-[20px] rounded-md py-2 hover:bg-accent hover:text-white duration-300":
+          "rounded-md border-2 border-accent py-2 text-[20px] font-bold text-accent duration-300 hover:bg-accent hover:text-white":
             variant === "outline",
-        }
+        },
       )}
       {...props}
     >

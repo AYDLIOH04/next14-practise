@@ -5,21 +5,21 @@ import { FooterLink } from "./footer-link";
 
 export const Footer = () => {
   return (
-    <footer className="bg-main min-h-[240px] px-16 py-10">
-      <div className="flex xl:flex-row xl:gap-0 gap-10 flex-col items-center justify-between main-container">
+    <footer className="min-h-[240px] bg-main px-16 py-10">
+      <div className="main-container flex flex-col items-center justify-between gap-10 xl:flex-row xl:gap-0">
         <div className="flex flex-col gap-2">
-          <SlPlaylist className="text-[40px] self-center" />
-          <h3 className="text-[22px] self-center">
+          <SlPlaylist className="self-center text-[40px]" />
+          <h3 className="self-center text-[22px]">
             Luck<span className="text-accent">ify</span>
           </h3>
-          <p className="mt-1 flex flex-row gap-1 items-center text-[13px]">
+          <p className="mt-1 flex flex-row items-center gap-1 text-[13px]">
             <FaRegCopyright className="text-[16px]" />
             Все права защищены
           </p>
         </div>
-        <ul className="flex lg:flex-row lg:text-start text-center flex-col xl:gap-16 gap-8 text-[18px]">
+        <ul className="flex flex-col gap-8 text-center text-[18px] lg:flex-row lg:text-start xl:gap-16">
           <li className="w-[250px]">
-            <h3 className="mb-4 capitalize flex flex-row gap-1 font-semibold lg:justify-normal justify-center">
+            <h3 className="mb-4 flex flex-row justify-center gap-1 font-semibold capitalize lg:justify-normal">
               contacts
               <Dot />
             </h3>
@@ -40,7 +40,7 @@ export const Footer = () => {
             </ul>
           </li>
           <li className="w-[250px]">
-            <h3 className="mb-4 capitalize flex flex-row gap-1 font-semibold lg:justify-normal justify-center">
+            <h3 className="mb-4 flex flex-row justify-center gap-1 font-semibold capitalize lg:justify-normal">
               collaborative companies
               <Dot />
             </h3>
@@ -54,7 +54,7 @@ export const Footer = () => {
             </ul>
           </li>
           <li className="w-[250px]">
-            <h3 className="mb-4 capitalize flex flex-row gap-1 font-semibold lg:justify-normal justify-center">
+            <h3 className="mb-4 flex flex-row justify-center gap-1 font-semibold capitalize lg:justify-normal">
               Programming languages
               <Dot />
             </h3>
