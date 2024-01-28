@@ -3,7 +3,7 @@
 import { useState } from "react";
 import LoginForm from "../forms/login";
 import RegistrationForm from "../forms/registration";
-import { FormType } from "@/types/auth.types";
+import { FormType } from "@/types/form-auth.types";
 
 const Auth = () => {
   const [formType, setFormType] = useState<FormType>("LOGIN");

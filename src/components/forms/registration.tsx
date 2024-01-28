@@ -1,4 +1,4 @@
-import { FormType } from "@/types/auth.types";
+import { FormType } from "@/types/form-auth.types";
 import Button from "@/components/ui/button";
 import Input from "@/components/ui/input";
 
