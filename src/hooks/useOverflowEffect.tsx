@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 
-const useOverflowEffect = () => {
+const useOverflowEffect = (className: string, deps: any[]) => {
   useEffect(() => {
-    document.body.style.overflow = "hidden";
+    document.body.classList.add(className);
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.classList.remove(className);
     };
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, deps);
 }
 
 export default useOverflowEffect

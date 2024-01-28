@@ -6,6 +6,14 @@
   body {
     @apply bg-background text-white;
   }
+
+  body.nav-scroll-disabled {
+    @apply overflow-hidden;
+  }
+
+  body.modal-scroll-disabled {
+    @apply overflow-hidden;
+  }
 }
 
 @layer components {

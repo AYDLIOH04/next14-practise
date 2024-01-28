@@ -9,7 +9,7 @@ export default function Home() {
             Luck<span className="text-accent">ify</span>
           </h1>
         </div>
-        <div className="w-[600px]">
+        <div className="max-w-[600px]">
           <h2 className="page-title">
             Why <span className="text-accent">we?</span>
           </h2>

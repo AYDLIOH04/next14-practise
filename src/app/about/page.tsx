@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section>
       <div className="container">
-        <div className="w-[600px]">
+        <div className="max-w-[600px]">
           <h2 className="page-title">
             About <span className="text-accent">me.</span>
           </h2>
