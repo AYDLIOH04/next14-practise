@@ -2,18 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-background text-white;
+@layer base {
+  body {
+    @apply bg-background text-white;
+  }
 }
 
-.container {
-  @apply mx-auto max-w-[1200px];
-}
+@layer components {
+  .container {
+    @apply mx-auto max-w-[1200px];
+  }
 
-.main-container {
-  @apply mx-auto max-w-[1800px];
-}
+  .main-container {
+    @apply mx-auto max-w-[1800px];
+  }
 
-.page-title {
-  @apply mb-8 text-2xl font-bold capitalize;
+  .page-title {
+    @apply mb-8 text-2xl font-bold capitalize;
+  }
 }

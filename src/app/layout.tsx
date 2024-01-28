@@ -16,14 +16,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  auth,
   children,
 }: {
+  auth: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={`${sora.variable} font-sora`}>
         <Header />
+        {auth}
         <main className="m-8 min-h-[calc(100vh-70px-240px-64px)]">
           {children}
         </main>

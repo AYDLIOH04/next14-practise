@@ -1,7 +1,4 @@
-import { AnimateElement } from "@/components/animation/animation";
-import { fadeIn } from "@/lib/variants";
-
-const Photos = () => {
+const Feed = () => {
   return (
     <section>
       <div className="container">
@@ -14,4 +11,4 @@ const Photos = () => {
   );
 };
 
-export default Photos;
+export default Feed;

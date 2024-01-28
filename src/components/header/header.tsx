@@ -12,8 +12,9 @@ export const Header = () => {
           <HeaderLink href={"/"}>Home</HeaderLink>
           <HeaderLink href={"/about"}>About</HeaderLink>
           <HeaderLink href={"/contacts"}>Contacts</HeaderLink>
-          <HeaderLink href={"/photos"}>Photos</HeaderLink>
+          <HeaderLink href={"/gallery"}>Photos</HeaderLink>
           <HeaderLink href={"/dashboard"}>Dashboard</HeaderLink>
+          <HeaderLink href={"/auth"}>Login</HeaderLink>
         </nav>
       </div>
     </header>
