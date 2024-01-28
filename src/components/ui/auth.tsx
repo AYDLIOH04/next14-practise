@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import LoginForm from "./forms/login-form";
-import RegistrationForm from "./forms/registration-form";
+import LoginForm from "../forms/login-form";
+import RegistrationForm from "../forms/registration-form";
 import { FormType } from "@/types/auth.types";
 
 const Auth = () => {
