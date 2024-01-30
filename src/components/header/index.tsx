@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <>
       {open && (
-        <div className="absolute inset-0 z-[10] h-[150vh] bg-black/10 backdrop-blur-sm" />
+        <div className="fixed inset-0 z-[10] h-[100vh] bg-black/10 backdrop-blur-sm" />
       )}
       <header className="h-[70px] w-full bg-main">
         <div className="main-container flex h-full w-full items-center justify-between px-4 md:px-8 lg:px-16">

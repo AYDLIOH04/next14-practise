@@ -40,7 +40,7 @@ const HeaderMobile = ({ open, setOpen }: HeaderMobileProps) => {
       animate="show"
       exit="hidden"
       transition={{ duration: 0.3 }}
-      className="absolute right-0 top-24 z-[100] flex items-center justify-start gap-10 lg:hidden"
+      className="fixed right-0 top-24 z-[100] flex items-center justify-start gap-10 lg:hidden"
     >
       <nav className="flex flex-col gap-4 text-4xl">
         <div className="flex flex-col gap-5 rounded-l-md bg-main px-2 py-3">
