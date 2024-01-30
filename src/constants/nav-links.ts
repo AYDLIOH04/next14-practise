@@ -7,7 +7,7 @@ export const navLinks = [
   { href: "/", label: 'Home', Icon: IoHome },
   { href: "/about", label: 'About', Icon: IoInformationCircle },
   { href: "/contacts", label: 'Contacts', Icon: IoMail },
-  { href: "/gallery", label: 'Gallery', Icon: AiFillPicture },
+  { href: "/photos", label: 'Gallery', Icon: AiFillPicture },
   { href: "/dashboard", label: 'Dashboard', Icon: MdDashboard },
   { href: "/auth", label: 'Login', Icon: TbLogin2 },
 ]

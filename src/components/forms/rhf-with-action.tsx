@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
-import { addEntry } from "../_actions/rhf-action";
+import { addEntry } from "../../app/_actions/rhf-action";
 
 type Inputs = z.infer<typeof FormDataSchema>;
 

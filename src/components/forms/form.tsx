@@ -1,9 +1,9 @@
 "use client";
 
 import { useFormState } from "react-dom";
-import { addEntry } from "../_actions/form-action";
+import { addEntry } from "../../app/_actions/form-action";
 import { SubmitButton } from "@/components/ui/submit-button";
-import { JsonCode } from "../../components/ui/json-code";
+import { JsonCode } from "../ui/json-code";
 
 export const Form = () => {
   const [state, formAction] = useFormState(addEntry, null);
