@@ -19,7 +19,7 @@ export function Modal({ children }: { children: React.ReactNode }) {
   useClickOutside(redirect, ref);
 
   return (
-    <section className="absolute left-0 top-0 z-[1000] flex h-full w-full flex-col items-center justify-center bg-black/10 backdrop-blur-sm">
+    <section className="fixed left-0 top-0 z-[1000] flex h-full w-full flex-col items-center justify-center bg-black/10 backdrop-blur-sm">
       <div ref={ref} className="relative w-full bg-main sm:w-[500px] rounded-md">
         <button
           onClick={redirect}
