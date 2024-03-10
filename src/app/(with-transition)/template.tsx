@@ -1,6 +1,5 @@
 import Transition from "@/components/animation/transition";
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  // return <Transition>{children}</Transition>;
-  return <div>{children}</div>
+  return <Transition>{children}</Transition>;
 }
