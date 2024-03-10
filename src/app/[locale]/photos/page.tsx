@@ -1,5 +1,5 @@
-import { Breadcrumbs } from "@/components/ui";
 import { photos } from "@/constants/gallery";
+import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ const Feed = () => {
           <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
             {photos.map(({ id, imageSrc }) => (
               <li key={id}>
-                <Link href={`/photos/${id}`}>
+                <Link href={`photos/${id}`}>
                   <Image
                     src={imageSrc}
                     height={500}

@@ -3,6 +3,7 @@
 import Link, { LinkProps } from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+
 type HeaderLinkProps = LinkProps & {
   children: React.ReactNode;
   href: string;
@@ -10,6 +11,9 @@ type HeaderLinkProps = LinkProps & {
 
 export const HeaderLink = ({ children, href, ...props }: HeaderLinkProps) => {
   const pathname = usePathname();
+  if (href.endsWith("/")) {
+    href = href.slice(0, -1);
+  }
   const active = pathname === href;
 
   return (

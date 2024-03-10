@@ -1,0 +1,36 @@
+{
+  "HomePage": {
+    "pageTitle": "Home Page",
+    "title": {
+      "main": "Why",
+      "accent": "we"
+    },
+    "infoList": [
+      { "text": "I am a fish text, I am very slippery" },
+      { "text": "Hello, how are you?" },
+      { "text": "LakiFai is like Spotify with a budget of 0 rubles" },
+      {
+        "text": "If you are studying Next and are interested in command development - write me"
+      },
+      { "text": "Telegram: @pavel_biryuchev" },
+      { "text": "So I know you are for real - write \"Hello from LuckiFy\"" }
+    ]
+  },
+  "AboutPage": {
+    "pageTitle": "About Page",
+    "title": {
+      "main": "About",
+      "accent": "Us"
+    },
+    "text": "I study at <accent>Radiofuck</accent>🧠 and learn <accent>TypeScript</accent> 🙃"
+  },
+  "Header": {
+    "Home": "Home",
+    "About": "About",
+    "Contacts": "Contacts",
+    "Gallery": "Gallery",
+    "Dashboard": "Dashboard",
+    "Animation": "Animation",
+    "Login": "Login"
+  }
+}
