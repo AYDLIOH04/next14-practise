@@ -1,5 +1,4 @@
-import Auth from "@/components/ui/auth";
-import { Modal } from "@/components/ui/modal";
+import { Auth, Modal } from "@/components/ui";
 
 export default function Page() {
   return (

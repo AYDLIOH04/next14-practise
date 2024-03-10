@@ -2,8 +2,7 @@
 
 import { useFormState } from "react-dom";
 import { addEntry } from "../../app/_actions/form-action";
-import { SubmitButton } from "@/components/ui/submit-button";
-import { JsonCode } from "../ui/json-code";
+import { SubmitButton, JsonCode } from "@/components/ui";
 
 export const Form = () => {
   const [state, formAction] = useFormState(addEntry, null);

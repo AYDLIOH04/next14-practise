@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import LoginForm from "../forms/login";
-import RegistrationForm from "../forms/registration";
-import { FormType } from "@/types/form-auth.types";
+import { LoginForm, RegistrationForm } from "../forms";
+import { FormType } from "@/types/form-auth";
 
-const Auth = () => {
+export const Auth = () => {
   const [formType, setFormType] = useState<FormType>("LOGIN");
 
   const switchForm = (type: FormType) => {
@@ -22,5 +21,3 @@ const Auth = () => {
     </section>
   );
 };
-
-export default Auth;

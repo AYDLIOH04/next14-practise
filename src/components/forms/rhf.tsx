@@ -1,7 +1,6 @@
 "use client";
 
-import { JsonCode } from "@/components/ui/json-code";
-import { SubmitButton } from "@/components/ui/submit-button";
+import { JsonCode, SubmitButton } from "@/components/ui";
 import clsx from "clsx";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";

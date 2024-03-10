@@ -1,7 +1,7 @@
 import { isEscapeKey } from "@/lib/utils";
 import { useEffect } from "react";
 
-const useEscapeKeydown = (callback: () => void) => {
+export const useEscapeKeydown = (callback: () => void) => {
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
       if (isEscapeKey(event)) {
@@ -16,5 +16,3 @@ const useEscapeKeydown = (callback: () => void) => {
     };
   }, [callback]);
 };
-
-export default useEscapeKeydown;

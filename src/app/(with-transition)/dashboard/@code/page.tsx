@@ -1,5 +1,5 @@
-import { JsonCode } from "@/components/ui/json-code";
-import { data } from "@/constants/dashboard";
+import { JsonCode } from "@/components/ui";
+import { dashboard } from "@/constants";
 import { delay } from "@/lib/utils";
 
 const Code = async () => {
@@ -10,7 +10,7 @@ const Code = async () => {
       <h1 className="mb-8 text-center text-3xl font-bold capitalize md:text-start">
         Code<span className="text-accent">.</span>
       </h1>
-      <JsonCode data={data} />
+      <JsonCode data={dashboard} />
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import Auth from "@/components/ui/auth";
+import { Auth } from "@/components/ui";
 
 const AuthPage = () => {
   return <Auth />;

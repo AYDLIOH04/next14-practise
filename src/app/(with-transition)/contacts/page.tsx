@@ -1,8 +1,10 @@
-import { Dot } from "@/components/ui/dot";
-import { Form } from "../../../components/forms/form";
-import { RHForm } from "../../../components/forms/rhf";
-import { RHFormWithZod } from "../../../components/forms/rhf-with-zod";
-import { RHFormWithAction } from "../../../components/forms/rhf-with-action";
+import { Dot } from "@/components/ui";
+import {
+  Form,
+  RHForm,
+  RHFormWithZod,
+  RHFormWithAction,
+} from "@/components/forms";
 
 const Contact = () => {
   return (

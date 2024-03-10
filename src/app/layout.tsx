@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import { Header, Footer } from "@/components";
 
 const sora = Sora({
   subsets: ["latin"],
@@ -13,7 +12,7 @@ const sora = Sora({
 export const metadata: Metadata = {
   title: "Next14 Demo",
   description: "Created by AYDLIOH",
-  keywords: ['Next.js', 'React', 'TypeScript', 'TailwindCSS'],
+  keywords: ["Next.js", "React", "TypeScript", "TailwindCSS"],
   creator: "Pavel Biryuchev",
   openGraph: {
     type: "website",

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 
-const Breadcrumbs = ({ breadcrumbs }: { breadcrumbs: any[] }) => {
+export const Breadcrumbs = ({ breadcrumbs }: { breadcrumbs: any[] }) => {
   return (
     <ul className="flex flex-row items-center gap-0.5">
       {breadcrumbs.slice(0, -1).map(({ text, href }, bcIndex) => (
@@ -23,5 +23,3 @@ const Breadcrumbs = ({ breadcrumbs }: { breadcrumbs: any[] }) => {
     </ul>
   );
 };
-
-export default Breadcrumbs;

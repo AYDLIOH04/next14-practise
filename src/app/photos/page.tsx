@@ -1,5 +1,5 @@
-import Breadcrumbs from "@/components/ui/breadcrumbs";
-import photos from "@/constants/gallery";
+import { Breadcrumbs } from "@/components/ui";
+import { photos } from "@/constants/gallery";
 import Image from "next/image";
 import Link from "next/link";
 

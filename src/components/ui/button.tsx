@@ -5,7 +5,11 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "full" | "outline" | "link";
 }
 
-const Button = ({ children, variant = "full", ...props }: ButtonProps) => {
+export const Button = ({
+  children,
+  variant = "full",
+  ...props
+}: ButtonProps) => {
   return (
     <button
       type="button"
@@ -30,5 +34,3 @@ const Button = ({ children, variant = "full", ...props }: ButtonProps) => {
     </button>
   );
 };
-
-export default Button;

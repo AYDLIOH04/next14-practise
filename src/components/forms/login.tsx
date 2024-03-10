@@ -1,8 +1,7 @@
-import { FormType } from "@/types/form-auth.types";
-import Button from "@/components/ui/button";
-import Input from "@/components/ui/input";
+import { FormType } from "@/types";
+import { Button, Input } from "@/components/ui";
 
-const LoginForm = ({
+export const LoginForm = ({
   switchForm,
 }: {
   switchForm: (check: FormType) => void;
@@ -24,5 +23,3 @@ const LoginForm = ({
     </form>
   );
 };
-
-export default LoginForm;

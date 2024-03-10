@@ -1,4 +1,3 @@
-import { ListItem } from "@/components/ui/list-item";
 import { delay } from "@/lib/utils";
 
 const TeamSettings = async () => {

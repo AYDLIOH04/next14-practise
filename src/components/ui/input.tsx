@@ -1,6 +1,6 @@
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-const Input = (props: InputProps) => {
+export const Input = (props: InputProps) => {
   return (
     <input
       {...props}
@@ -8,5 +8,3 @@ const Input = (props: InputProps) => {
     />
   );
 };
-
-export default Input;

@@ -1,9 +1,9 @@
-import { Modal } from "@/components/ui/modal";
-import PhotoCard from "@/components/ui/photo-card";
-import photos, { Photo } from "@/constants/gallery";
+import { Modal, PhotoCard } from "@/components/ui";
+import { photos } from "@/constants";
+import { PhotoType } from "@/types";
 
 const PhotoModal = ({ params: { id } }: { params: { id: string } }) => {
-  const photo: Photo = photos.find((p) => p.id === id)!;
+  const photo: PhotoType = photos.find((p) => p.id === id)!;
 
   return (
     <Modal>

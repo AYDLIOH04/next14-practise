@@ -1,8 +1,8 @@
-import { Photo } from "@/constants/gallery";
+import { PhotoType } from "@/types";
 import Image from "next/image";
 import { FaXTwitter, FaTwitter } from "react-icons/fa6";
 
-const PhotoCard = ({ imageSrc, name, username }: Photo) => {
+export const PhotoCard = ({ imageSrc, name, username }: PhotoType) => {
   return (
     <div className="flex flex-col gap-2">
       <div>
@@ -30,5 +30,3 @@ const PhotoCard = ({ imageSrc, name, username }: Photo) => {
     </div>
   );
 };
-
-export default PhotoCard;

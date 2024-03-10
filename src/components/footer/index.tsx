@@ -3,7 +3,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 import { Dot } from "../ui/dot";
 import { FooterLink } from "./link";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <footer className="min-h-[240px] bg-main px-16 py-10">
       <div className="main-container flex flex-col items-center justify-between gap-10 xl:flex-row xl:gap-0">
@@ -72,5 +72,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

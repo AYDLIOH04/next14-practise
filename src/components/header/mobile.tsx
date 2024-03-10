@@ -1,9 +1,8 @@
-import { navLinks } from "@/constants/nav-links";
-import { useClickOutside } from "@/hooks/useClickOutside";
-import useOverflowEffect from "@/hooks/useOverflowEffect";
+import { navLinks } from "@/constants";
+import { useClickOutside, useOverflowEffect } from "@/hooks";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { TbLogin2 } from "react-icons/tb";
 
 const mobileNavVariants = {

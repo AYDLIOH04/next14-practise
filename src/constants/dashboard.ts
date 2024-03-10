@@ -1,4 +1,4 @@
-export const data = {
+export const dashboard = {
   subject: "Golang ?!",
   body: {
     title: "Стоит ботать Golang?",

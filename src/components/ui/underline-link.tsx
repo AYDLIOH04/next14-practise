@@ -5,7 +5,11 @@ type UnderlineLinkProps = LinkProps & {
   children: React.ReactNode;
 };
 
-const UnderlineLink = ({ href, children, ...props }: UnderlineLinkProps) => {
+export const UnderlineLink = ({
+  href,
+  children,
+  ...props
+}: UnderlineLinkProps) => {
   return (
     <Link
       href={href}
@@ -16,5 +20,3 @@ const UnderlineLink = ({ href, children, ...props }: UnderlineLinkProps) => {
     </Link>
   );
 };
-
-export default UnderlineLink;

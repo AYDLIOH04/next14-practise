@@ -1,7 +1,6 @@
 "use client";
 
-import { JsonCode } from "@/components/ui/json-code";
-import { SubmitButton } from "@/components/ui/submit-button";
+import { JsonCode, SubmitButton } from "@/components/ui";
 import { FormDataSchema } from "@/lib/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import clsx from "clsx";

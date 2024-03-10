@@ -1,4 +1,4 @@
-import { ListItem } from "@/components/ui/list-item";
+import { ListItem } from "@/components/ui";
 import { delay } from "@/lib/utils";
 
 const Team = async () => {

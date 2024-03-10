@@ -1,4 +1,4 @@
-import { navLinks } from "@/constants/nav-links";
+import { navLinks } from "@/constants";
 import { HeaderLink } from "./link";
 
 const HeaderDesktop = () => {

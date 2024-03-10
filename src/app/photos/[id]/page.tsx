@@ -1,14 +1,14 @@
-import photos, { Photo } from "@/constants/gallery";
-import Breadcrumbs from "@/components/ui/breadcrumbs";
-import PhotoCard from "@/components/ui/photo-card";
+import { photos } from "@/constants";
+import { Breadcrumbs, PhotoCard } from "@/components/ui";
 import { notFound } from "next/navigation";
+import { PhotoType } from "@/types";
 
 export async function generateMetadata({
   params: { id },
 }: {
   params: { id: string };
 }) {
-  const photo: Photo = photos.find((p) => p.id === id)!;
+  const photo: PhotoType = photos.find((p) => p.id === id)!;
 
   return {
     title: `Photo ${id}`,
@@ -22,7 +22,7 @@ export async function generateMetadata({
 }
 
 const Photo = ({ params: { id } }: { params: { id: string } }) => {
-  const photo: Photo = photos.find((p) => p.id === id)!;
+  const photo: PhotoType = photos.find((p) => p.id === id)!;
 
   if (!photo) {
     notFound();
