@@ -32,5 +32,12 @@
     "Dashboard": "Dashboard",
     "Animation": "Animation",
     "Login": "Login"
+  },
+  "LangSwitcher": {
+    "title": "Change language",
+    "langs": [
+      { "name": "😎 Russian", "id": "ru" },
+      { "name": "🏳️‍🌈 English", "id": "en" }
+    ]
   }
 }

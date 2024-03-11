@@ -4,9 +4,11 @@ import { getRequestConfig } from "next-intl/server";
 const locales = ["en", "ru"];
 
 export default getRequestConfig(async ({ locale }) => {
-  if (!locales.includes(locale as any)) notFound();
+  const baseLocale = new Intl.Locale(locale).baseName;
+
+  if (!locales.includes(baseLocale)) notFound();
 
   return {
-    messages: (await import(`../messages/${locale}.json`)).default,
+    messages: (await import(`../messages/${baseLocale}.json`)).default,
   };
 });

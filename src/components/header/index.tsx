@@ -6,6 +6,7 @@ import { SlPlaylist } from "react-icons/sl";
 import HeaderDesktop from "./desktop";
 import HeaderMobile from "./mobile";
 import { AnimatePresence } from "framer-motion";
+import { LangSwitcher } from "../locale";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -25,6 +26,7 @@ export const Header = () => {
           <AnimatePresence mode="wait">
             {open && <HeaderMobile open={open} setOpen={setOpen} />}
           </AnimatePresence>
+          <LangSwitcher />
         </div>
       </header>
     </>

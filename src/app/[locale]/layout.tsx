@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 import { Header, Footer } from "@/components";
-import { IntlProvider } from "@/components/intl-provider";
-import { notFound } from "next/navigation";
+import { IntlProvider } from "@/components/locale/intl-provider";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 const sora = Sora({
@@ -34,7 +33,6 @@ type RootLayout = {
   params: { locale: string };
 };
 
-// Can be imported from a shared config
 const locales = ["en", "de"];
 
 export function generateStaticParams() {
