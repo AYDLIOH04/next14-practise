@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 type RootLayout = {
-  auth: React.ReactNode;
+  // auth: React.ReactNode;
   children: React.ReactNode;
   params: { locale: string };
 };
@@ -39,14 +39,18 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const RootLayout = ({ auth, children, params: { locale } }: RootLayout) => {
+const RootLayout = ({
+  // auth,
+  children,
+  params: { locale },
+}: RootLayout) => {
   unstable_setRequestLocale(locale);
   return (
     <html lang={locale}>
       <body className={`${sora.variable} font-sora`}>
         <IntlProvider locale={locale}>
           <Header />
-          {auth}
+          {/* {auth} */}
           <main className="m-8 min-h-[calc(100vh-70px-240px-64px)]">
             {children}
           </main>

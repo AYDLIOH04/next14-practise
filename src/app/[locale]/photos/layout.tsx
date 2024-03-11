@@ -1,13 +1,13 @@
 export default function GalleryLayout({
   children,
-  modal,
+  // modal,
 }: {
   children: React.ReactNode;
-  modal: React.ReactNode;
+  // modal: React.ReactNode;
 }) {
   return (
     <>
-      {modal}
+      {/* {modal} */}
       {children}
     </>
   );
